@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <script src="stock.js"></script>
-	 <script src="display.js"></script>
-	 <script src="publicTest.js"></script>
-    <title>Revealing Module Pattern</title>
+    <title>Warehouse</title>
+    <script type="module" defer>
+      import {Warehouse} from "./warehouse.js"
+      import {testWarehouse} from "./test.js"
+      testWarehouse(Warehouse)
+    </script>
   </head>
   <body>
-    <p>Rufe die Funktion testDisplay(); über die Konsole auf. <br>
-	<br>
-	Benutze keine Leerzeichen, nur zwischen "Anzahl" und "Einheit"!
-	</p>
+    <h2>Willkommen im Warehouse</h2>
+    <div style="font-style: italic;">In dieser Aufgabe bauen wir eine Klasse 'Warehouse'. Hier sieht ihr die Tests, die pro Aufgabe erfüllt werden müssen. Habt ihr alle Tests für eine Aufgabe erfüllt, werden die Tests für die nächste Aufgabe angezeigt.</div>
   </body>
 </html>
